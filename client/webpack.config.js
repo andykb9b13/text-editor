@@ -28,14 +28,14 @@ module.exports = () => {
       }),
       new GenerateSW(),
       new WebpackPwaManifest({
-        name: "Text-Editor",
-        short_name: "Text-Editor",
+        name: "Just Another Text Editor",
+        short_name: "J.A.T.E",
         description: "A simple text editor app",
         background_color: "#ffffff",
         crossorigin: "use-credentials", //can be null, use-credentials or anonymous
         icons: [
           {
-            src: path.resolve("/favicon.ico"),
+            src: path.resolve("./src/images/logo.png"),
             sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
             // specifying the path for the icons
             destination: path.join("assets", "icons"),
