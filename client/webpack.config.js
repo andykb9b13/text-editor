@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WebpackPwaManifest = require("webpack-pwa-manifest");
 const path = require("path");
-const { InjectManifest, GenerateSW } = require("workbox-webpack-plugin");
+const { InjectManifest } = require("workbox-webpack-plugin");
 
 module.exports = () => {
   return {
@@ -17,13 +17,12 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: "./index.html",
-        title: "Webpack Plugin",
+        title: "J.A.T.E",
       }),
       new InjectManifest({
         swSrc: "./src-sw.js",
         swDest: "src-sw.js",
       }),
-      new GenerateSW(),
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
@@ -31,6 +30,7 @@ module.exports = () => {
         short_name: "J.A.T.E",
         description: "A simple text editor app",
         background_color: "#ffffff",
+        theme_color: "#ffffff",
         start_url: "/",
         publicPath: "/",
 
