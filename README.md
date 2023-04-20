@@ -53,3 +53,5 @@ For any questions regarding this project, please send correspondence to andy.kle
 Please visit my profile on [GitHub](https://github.com/andykb9b13).
 
 ## Link to Live Site
+
+[https://text-editor-fun.herokuapp.com/](https://text-editor-fun.herokuapp.com/)
